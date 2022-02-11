@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: 'maven'
+  name: 'Ubuntu-maven'
 
 steps:
 - task: Maven@3
