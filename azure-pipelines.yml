@@ -8,6 +8,10 @@ trigger:
 
 pool:
   name: 'Ubuntu-maven'
+stages:
+  - stage: 'build'
+jobs:
+  - job: 'Build Job'
 
 steps:
 - task: Maven@3
