@@ -10,12 +10,12 @@ pool:
   name: 'Ubuntu-maven'
 jobs:
   - job: 'Build Job'  
-    stages:
-      - stage: 'build'
-    steps:
-    - task: Maven@3
-      inputs:
-        mavenPomFile: 'pom.xml'
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        goals: 'package'
+stages:
+  - stage: 'build'
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
