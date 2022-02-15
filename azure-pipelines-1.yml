@@ -6,6 +6,6 @@
 trigger:
 - master
 pool:
-  name: 'linux-containers'
+  name: linux-containers
 steps:
 - script: echo This pipeline runs first !
