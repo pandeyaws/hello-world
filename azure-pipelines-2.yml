@@ -12,7 +12,7 @@ resources:
     trigger: true # enable the trigger
 
 pool:
-   name: Ubuntu-maven
+   name: linux-containers
 
 steps:
   - script: echo This pipeline was set to be triggered after first pipeline completes.
