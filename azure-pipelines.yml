@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: linux-containers
+  name: VM-2
 
 steps:
 - task: Maven@3
