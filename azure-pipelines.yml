@@ -7,10 +7,10 @@ trigger:
 - master
 
 pool:
-  Name: 'vm'
+  Name: vm
 
 steps:
-- task: Maven@3
+- task: Maven
   inputs:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
