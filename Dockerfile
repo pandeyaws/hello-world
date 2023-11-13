@@ -1,9 +1,7 @@
-# Pull base image 
-From tomcat:8-jre8
+FROM tomcat:8-jre11
+COPY target/webapp.war /usr/local/tomcat/webapps/webapp.war
 
-# Maintainer 
-MAINTAINER "Alok Pandey" 
-#COPY ./webapp.war /usr/local/tomcat/webapps
-COPY /var/lib/jenkins/workspace/Ci-pipeline/webapp/target/webapp.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
 
 
