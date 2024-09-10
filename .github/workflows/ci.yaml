@@ -20,7 +20,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Run the Maven verify phase
-      run: mvn clean install && cd target && ls -lrt 
+      run: mvn clean install 
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
