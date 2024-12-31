@@ -3,6 +3,6 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
   check-bats-version:
-    runs-on: [selfhosted, Linux]
+    runs-on: [self-hosted, Linux]
     steps:
       - uses: actions/checkout@v4
